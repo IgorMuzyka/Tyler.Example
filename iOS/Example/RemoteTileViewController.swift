@@ -64,11 +64,6 @@ public class RemoteTileViewController: UIViewController {
     public override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
             remoteTile.load()
-//            if self is DebugViewController {
-//                dismiss(animated: true)
-//            } else {
-//                present(DebugViewController(), animated: true)
-//            }
         }
     }
     #endif
