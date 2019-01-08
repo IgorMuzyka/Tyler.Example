@@ -15,6 +15,8 @@ public class TileViewController: UIViewController {
         }
     }
 
+    public var field: UITextField!
+
     private weak var tyler: Tyler!
 
     public init(tile: Tile, tyler: Tyler) {

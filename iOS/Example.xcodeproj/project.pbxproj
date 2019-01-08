@@ -13,6 +13,7 @@
 		5559F88E21B001BD002E7EE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5559F88C21B001BD002E7EE0 /* LaunchScreen.storyboard */; };
 		5559F89621B0054D002E7EE0 /* TileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5559F89521B0054D002E7EE0 /* TileViewController.swift */; };
 		5559F89821B019E0002E7EE0 /* ExampleTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5559F89721B019E0002E7EE0 /* ExampleTile.swift */; };
+		55AF104B21DF962E004B3F71 /* RemoteTileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AF104A21DF962E004B3F71 /* RemoteTileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		5559F88F21B001BD002E7EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5559F89521B0054D002E7EE0 /* TileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileViewController.swift; sourceTree = "<group>"; };
 		5559F89721B019E0002E7EE0 /* ExampleTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTile.swift; sourceTree = "<group>"; };
+		55AF104A21DF962E004B3F71 /* RemoteTileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteTileViewController.swift; sourceTree = "<group>"; };
 		69CE9E5B025DB4A02865C93B /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C379049BB3E53FC3AAB96CBA /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C2A08C96BF0E1C11C4745C /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			children = (
 				5559F88321B001BC002E7EE0 /* AppDelegate.swift */,
 				5559F89521B0054D002E7EE0 /* TileViewController.swift */,
+				55AF104A21DF962E004B3F71 /* RemoteTileViewController.swift */,
 				5559F89721B019E0002E7EE0 /* ExampleTile.swift */,
 				5559F88A21B001BD002E7EE0 /* Assets.xcassets */,
 				5559F88C21B001BD002E7EE0 /* LaunchScreen.storyboard */,
@@ -96,6 +99,7 @@
 			buildConfigurationList = 5559F89221B001BD002E7EE0 /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
 				C62463AD96A00C5C66E3A0FC /* [CP] Check Pods Manifest.lock */,
+				55AF179021E43E9E004B3F71 /* Current machine local ip address to Info.plist */,
 				5559F87C21B001BC002E7EE0 /* Sources */,
 				5559F87D21B001BC002E7EE0 /* Frameworks */,
 				5559F87E21B001BC002E7EE0 /* Resources */,
@@ -166,8 +170,10 @@
 				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
 				"${BUILT_PRODUCTS_DIR}/Anchor/Anchor.framework",
 				"${BUILT_PRODUCTS_DIR}/Identifier/Identifier.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Style/Style.framework",
 				"${BUILT_PRODUCTS_DIR}/Substitutes/Substitutes.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftShell/SwiftShell.framework",
 				"${BUILT_PRODUCTS_DIR}/Tag/Tag.framework",
 				"${BUILT_PRODUCTS_DIR}/Tyler/Tyler.framework",
 				"${BUILT_PRODUCTS_DIR}/TylerSupportAppleCommon/TylerSupportAppleCommon.framework",
@@ -179,8 +185,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Anchor.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Identifier.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Style.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Substitutes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftShell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tag.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tyler.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TylerSupportAppleCommon.framework",
@@ -191,6 +199,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		55AF179021E43E9E004B3F71 /* Current machine local ip address to Info.plist */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Current machine local ip address to Info.plist";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "plistPath=\"${SRCROOT}/Example/Info.plist\"\nipAddress=$(ifconfig en0 | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\\.){3}[0-9]*).*/\\2/p')\n\n\nexistingValue=$(/usr/libexec/PlistBuddy -c \"Print :REMOTE_IP_ADDRESS\" \"$plistPath\")\n\nif [ -z \"$existingValue\" ]; then\n# Key already exists so overwrite it\n/usr/libexec/PlistBuddy -c \"Add :REMOTE_IP_ADDRESS string ${ipAddress}\" \"$plistPath\"\nelse\n# Key doesn't exist yet\n/usr/libexec/PlistBuddy -c \"Set :REMOTE_IP_ADDRESS ${ipAddress}\" \"$plistPath\"\nfi\n\necho $ipAddress\necho $(/usr/libexec/PlistBuddy -c \"Print :REMOTE_IP_ADDRESS\" \"$plistPath\")\n";
 		};
 		C62463AD96A00C5C66E3A0FC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -217,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55AF104B21DF962E004B3F71 /* RemoteTileViewController.swift in Sources */,
 				5559F89821B019E0002E7EE0 /* ExampleTile.swift in Sources */,
 				5559F89621B0054D002E7EE0 /* TileViewController.swift in Sources */,
 				5559F88421B001BC002E7EE0 /* AppDelegate.swift in Sources */,
@@ -359,7 +386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4GHD6ARX6B;
+				DEVELOPMENT_TEAM = PAMBM76632;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,7 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4GHD6ARX6B;
+				DEVELOPMENT_TEAM = PAMBM76632;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

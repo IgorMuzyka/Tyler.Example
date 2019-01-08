@@ -10,6 +10,9 @@ import UIKit
 import Tyler
 import TylerSupportAppleUIKit
 
+import Variable
+import Substitutes
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -18,10 +21,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow()
-        window!.rootViewController = TileViewController(tile: ExampleTile(), tyler: tyler)
+
+
+        let ipAddress = Bundle.main.infoDictionary?["REMOTE_IP_ADDRESS"] as! String
+        let port = "8080"
+        let route = "http://\(ipAddress):\(port)/users"
+        let url = URL(string: route)!
+
+        window!.rootViewController = RemoteTileViewController(remoteTile: RemoteTile(url: url), tyler: tyler)
+
+
+
+//        window!.rootViewController = RemoteTileViewController(remoteTile: RemoteTile(url: url), tyler: tyler)
+//            TileViewController(tile: ExampleTile(), tyler: tyler)
         window!.makeKeyAndVisible()
 
         return true
     }
 }
-

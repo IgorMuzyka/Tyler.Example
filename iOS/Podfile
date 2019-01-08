@@ -4,6 +4,9 @@ platform :ios, '12.1'
 target 'Example' do
   use_frameworks!
 
+  pod "Kingfisher", "~> 5.0.0"
+  pod "SwiftShell", ">= 4.0.0"
+
   pod "Tyler", :git => "https://github.com/IgorMuzyka/Tyler.git"
   pod "Identifier", :git => "https://github.com/IgorMuzyka/Tyler.Identifier.git"
   pod "Tag", :git => "https://github.com/IgorMuzyka/Tyler.Tag.git"
@@ -17,3 +20,4 @@ target 'Example' do
   pod "TylerSupportAppleUIKit", :git => "https://github.com/IgorMuzyka/Tyler.Support.Apple.UIKit.git"
 
 end
+
