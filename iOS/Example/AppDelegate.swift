@@ -26,25 +26,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Tyler.adapter.register(type: NavigationAction.self)
         Tyler.adapter.register(alias: NavigationAction.alias, for: NavigationAction.self)
 
-        let ipAddress = Bundle.main.infoDictionary?["REMOTE_IP_ADDRESS"] as! String
-        let port = "8080"
+        tyler.stores.actionHandlers.add { [weak self] (action: NavigationAction) in
+            guard let `self` = self else { return }
 
-        let route = "http://\(ipAddress):\(port)/todos"
-        let url = URL(string: route)!
+            let tile = RemoteTile(url: Server.route(to: action.destination))
+            self.window!.rootViewController = RemoteTileViewController(remoteTile: tile, tyler: self.tyler)
 
-        tyler.stores.actionHandlers.add { (action: NavigationAction) in
             print(action.destination)
         }
 
-        window!.rootViewController = RemoteTileViewController(remoteTile: RemoteTile(url: url), tyler: tyler)
-
-
-
-        
-//        window!.rootViewController = RemoteTileViewController(remoteTile: RemoteTile(url: url), tyler: tyler)
-//            TileViewController(tile: ExampleTile(), tyler: tyler)
+        window!.rootViewController = RemoteTileViewController(remoteTile: RemoteTile(url: Server.route(to: "todos")), tyler: tyler)
         window!.makeKeyAndVisible()
 
         return true
+    }
+}
+
+enum Server {
+
+    static var port = "8080"
+    static var ipAddress: String = {
+        return Bundle.main.infoDictionary?["REMOTE_IP_ADDRESS"] as! String
+    }()
+
+    static func route(to path: String) -> URL {
+        let route = "http://\(ipAddress):\(port)/\(path)"
+        return URL(string: route)!
     }
 }
