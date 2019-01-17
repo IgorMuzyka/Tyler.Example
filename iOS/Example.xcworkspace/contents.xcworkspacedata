@@ -4,6 +4,35 @@
    <FileRef
       location = "group:Example.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:Example"
+      name = "Example">
+      <FileRef
+         location = "group:Example/AppDelegate.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Example/TileViewController.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Example/RemoteTileViewController.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Example/ExampleTile.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Example/Assets.xcassets">
+      </FileRef>
+      <Group
+         location = "group:Example"
+         name = "LaunchScreen.storyboard">
+         <FileRef
+            location = "group:Example/Base.lproj/LaunchScreen.storyboard">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Example/Info.plist">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>

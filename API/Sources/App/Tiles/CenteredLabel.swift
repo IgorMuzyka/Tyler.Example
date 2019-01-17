@@ -12,8 +12,8 @@ final public class CenteredLabel: Tile {
     public init(name: String? = nil, text: Variable<String>) {
         label = Tile(UIKitViewType.label)
             .anchor(Anchor(.self).center)
-            .style(UILabelStyle.textColor(.let(.white)))
-            .style(UILabelStyle.text(text))
+            .style(.textColor(.let(.white)))
+            .style(.text(text))
 
         super.init(UIKitViewType.view.rawValue, name: name, tiles: [label])
     }

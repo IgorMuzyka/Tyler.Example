@@ -96,8 +96,8 @@
         "repositoryURL": "https://github.com/vapor/sql.git",
         "state": {
           "branch": null,
-          "revision": "839cf96eba296d26151ff1d7a746e9fe35053584",
-          "version": "2.2.0"
+          "revision": "f77bcae7c95150cdab62095e7bf321ed8c7551bd",
+          "version": "2.3.0"
         }
       },
       {
@@ -159,7 +159,7 @@
         "repositoryURL": "https://github.com/IgorMuzyka/Tyler.git",
         "state": {
           "branch": "master",
-          "revision": "da9f7b665069f2f6381e17dc8a2ab85eb89ac8f2",
+          "revision": "62d36bc666f557f929d947d4863a459cec0a1b0d",
           "version": null
         }
       },
@@ -168,7 +168,7 @@
         "repositoryURL": "https://github.com/IgorMuzyka/Tyler.Action.git",
         "state": {
           "branch": "master",
-          "revision": "1b03873b230c9bfc1a6f2b1d3cd455c231aa5e85",
+          "revision": "212c77d09d8175310764c289af50953a5a612df2",
           "version": null
         }
       },
@@ -195,7 +195,7 @@
         "repositoryURL": "https://github.com/IgorMuzyka/Tyler.Style.git",
         "state": {
           "branch": "master",
-          "revision": "6c4cec325410b90f9f8854d835629fae5ca7536f",
+          "revision": "938a47e7dc695fcf8c9e58288031cd7a21811139",
           "version": null
         }
       },
@@ -213,7 +213,7 @@
         "repositoryURL": "https://github.com/IgorMuzyka/Tyler.Support.Apple.Common.git",
         "state": {
           "branch": "master",
-          "revision": "cdc390346517f03f70e58ca61a4a7f7e59d2e8f5",
+          "revision": "61aa2c20ada6f7c8582c6f7b586c94cfc7327645",
           "version": null
         }
       },
@@ -222,7 +222,7 @@
         "repositoryURL": "https://github.com/IgorMuzyka/Tyler.Support.Apple.UIKit.git",
         "state": {
           "branch": "master",
-          "revision": "d8e672c2939f38ca5bde0687b3cda62bc8a9dca0",
+          "revision": "5c746292301ab7ee6c20cd0a691e9037dea6777f",
           "version": null
         }
       },
@@ -241,6 +241,15 @@
         "state": {
           "branch": "master",
           "revision": "b5e2b1c7f7750c33c2c921396d1974bd72b8d46e",
+          "version": null
+        }
+      },
+      {
+        "package": "TypePreservingCodingAdapter",
+        "repositoryURL": "https://github.com/IgorMuzyka/Type-Preserving-Coding-Adapter",
+        "state": {
+          "branch": "master",
+          "revision": "56de4b11ca4154837b18634628e6370bb53fd095",
           "version": null
         }
       },
@@ -267,8 +276,8 @@
         "repositoryURL": "https://github.com/vapor/vapor.git",
         "state": {
           "branch": null,
-          "revision": "157d3b15336caa882662cc75024dd04b2e225246",
-          "version": "3.1.0"
+          "revision": "54cbf396147aba77ecb32e7fc75a3d13251551b1",
+          "version": "3.1.1"
         }
       },
       {

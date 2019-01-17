@@ -9,8 +9,8 @@ final public class ImageView: Tile {
 
     init(url: String) {
         super.init(UIKitViewType.imageView.rawValue, tiles: [])
-        style(UIImageViewStyle.url(.let(url)))
-        style(UIViewStyle.contentMode(.let(.scaleAspectFit)))
+        style(.url(.let(url)))
+        style(.contentMode(.let(.scaleAspectFit)))
         style(UIViewStyle.backgroundColor(.let(.green)))
     }
 

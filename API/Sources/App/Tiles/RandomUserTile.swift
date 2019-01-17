@@ -12,22 +12,25 @@ final public class RandomUserTile: Tile {
         let username = Label(text: .let(user.name + " " + user.surname), color: .let(.random))
 
         imageView
-            .anchor(imageView.anchor.height.width.equal.to(150))
-            .anchor(imageView.anchor.top.constant(50))
+            .anchor(imageView.anchor.height.width.equal.to(50))
+            .anchor(imageView.anchor.top.constant(10))
             .anchor(imageView.anchor.left.constant(10))
+//            .anchor(imageView.anchor.bottom.constant(60))
             .style(UIViewStyle.backgroundColor(.let(.random)))
-            .style(CALayerStyle.cornerRadius(.let(9.375)))
-            .style(UIViewStyle.clipsToBounds(.let(true)))
+            .style(.cornerRadius(.let(3.125)))
+            .style(.clipsToBounds(.let(true)))
 
         username
-
             .anchor(username.anchor.left.to(imageView.anchor.right).constant(10))
             .anchor(username.anchor.right.constant(-10))
-            .anchor(username.anchor.top.to(imageView.anchor.top))
+            .anchor(username.anchor.top.to(imageView.anchor.top).constant(2))
+            .style(.textColor(.let(.red)))
+            .style(UIViewStyle.backgroundColor(.let(.blue)))
 
         super.init(UIKitViewType.view.rawValue, tiles: [imageView, username])
 
         style(UIViewStyle.backgroundColor(.let(.red)))
+        anchor(Anchor(.self).height.equal.to(150))
     }
 
     public required init(from decoder: Decoder) throws {

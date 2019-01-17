@@ -5,6 +5,7 @@ import Anchor
 enum EqualSizeFixedSpacingLayout {
 
     static func layout(tiles: [Tile], in container: Tile, with spacing: Double = 0, orientation: Orientation, reversed: Bool = false) {
+
         guard tiles.count >= 2 else { return }
 
         let items = ((reversed) ? tiles.reversed() : tiles)

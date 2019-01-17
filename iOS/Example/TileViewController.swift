@@ -8,20 +8,19 @@ public class TileViewController: UIViewController {
 
     public private(set) var context: Context!
     public private(set) var tile: Tile
-    public private(set) var pool = VariablePool()
+    public private(set) var pool: VariablePool
     public var tags: [Tag] = [.currentOrientation, .wildcard] {
         didSet {
             render()
         }
     }
 
-    public var field: UITextField!
-
     private weak var tyler: Tyler!
 
-    public init(tile: Tile, tyler: Tyler) {
+    public init(tile: Tile, tyler: Tyler, pool: VariablePool = VariablePool()) {
         self.tile = tile
         self.tyler = tyler
+        self.pool = pool
         super.init(nibName: nil, bundle: nil)
     }
 

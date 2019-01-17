@@ -16,8 +16,6 @@ public class RemoteTileViewController: UIViewController {
         }
     }
 
-    public var field: UITextField!
-
     private weak var tyler: Tyler!
 
     public init(remoteTile: RemoteTile, tyler: Tyler, pool: VariablePool = VariablePool()) {
@@ -29,7 +27,7 @@ public class RemoteTileViewController: UIViewController {
             self?.render()
         }
         self.remoteTile.failure = { [weak self] error in
-            print(error)
+            self?.render()
         }
         self.remoteTile.load()
     }
@@ -86,16 +84,19 @@ public final class RemoteTile {
     fileprivate func load() -> URLSessionTask {
         let request = URLRequest(url: url)
         let task = URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
-            guard let data = data else {
-                self?.failure?(error)
-                return
-            }
-
             do {
-                let tile = try JSONDecoder().decode(Tile.self, from: data)
+                guard let data = data else {
+                    if let error = error {
+                        throw error
+                    }
+                    return
+                }
+
+                let tile = try Tyler.decoder.decode(Tile.self, from: data)
                 self?.tile = tile
                 self?.success?(tile)
             } catch {
+                self?.tile = ErrorTile(error: error)
                 self?.failure?(error)
             }
         }
@@ -103,5 +104,4 @@ public final class RemoteTile {
         task.resume()
         return task
     }
-
 }

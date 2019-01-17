@@ -1,5 +1,6 @@
 PODS:
-  - Action (0.0.1)
+  - Action (0.0.1):
+    - TypePreservingCodingAdapter
   - Anchor (0.0.1):
     - Identifier
     - Tag
@@ -7,6 +8,7 @@ PODS:
   - Kingfisher (5.0.1)
   - Style (0.0.1):
     - Tag
+    - TypePreservingCodingAdapter
     - Variable
   - Substitutes (0.0.1):
     - Style
@@ -19,6 +21,7 @@ PODS:
     - Identifier
     - Style
     - Tag
+    - TypePreservingCodingAdapter
     - Variable
   - TylerSupportAppleCommon (0.0.1):
     - Substitutes
@@ -32,6 +35,7 @@ PODS:
     - Tyler
     - TylerSupportAppleCommon
     - Variable
+  - TypePreservingCodingAdapter (1.0.0)
   - Variable (0.0.1)
 
 DEPENDENCIES:
@@ -46,6 +50,7 @@ DEPENDENCIES:
   - Tyler (from `https://github.com/IgorMuzyka/Tyler.git`)
   - TylerSupportAppleCommon (from `https://github.com/IgorMuzyka/Tyler.Support.Apple.Common.git`)
   - TylerSupportAppleUIKit (from `https://github.com/IgorMuzyka/Tyler.Support.Apple.UIKit.git`)
+  - TypePreservingCodingAdapter (from `https://github.com/IgorMuzyka/Type-Preserving-Coding-Adapter.git`)
   - Variable (from `https://github.com/IgorMuzyka/Tyler.Variable.git`)
 
 SPEC REPOS:
@@ -72,12 +77,14 @@ EXTERNAL SOURCES:
     :git: https://github.com/IgorMuzyka/Tyler.Support.Apple.Common.git
   TylerSupportAppleUIKit:
     :git: https://github.com/IgorMuzyka/Tyler.Support.Apple.UIKit.git
+  TypePreservingCodingAdapter:
+    :git: https://github.com/IgorMuzyka/Type-Preserving-Coding-Adapter.git
   Variable:
     :git: https://github.com/IgorMuzyka/Tyler.Variable.git
 
 CHECKOUT OPTIONS:
   Action:
-    :commit: 1b03873b230c9bfc1a6f2b1d3cd455c231aa5e85
+    :commit: 212c77d09d8175310764c289af50953a5a612df2
     :git: https://github.com/IgorMuzyka/Tyler.Action.git
   Anchor:
     :commit: eeb9d09bc25963a96a770a8812c094da9594d471
@@ -86,7 +93,7 @@ CHECKOUT OPTIONS:
     :commit: 7cae3ec51fa514749a98c98d578f991169e5d1e5
     :git: https://github.com/IgorMuzyka/Tyler.Identifier.git
   Style:
-    :commit: 6c4cec325410b90f9f8854d835629fae5ca7536f
+    :commit: 938a47e7dc695fcf8c9e58288031cd7a21811139
     :git: https://github.com/IgorMuzyka/Tyler.Style.git
   Substitutes:
     :commit: 4d659e857044639b6212865b3b7bdd51e4bb1fe8
@@ -95,32 +102,36 @@ CHECKOUT OPTIONS:
     :commit: 235120d0dd85d0b2db95ba04f6637fc6f87b19b6
     :git: https://github.com/IgorMuzyka/Tyler.Tag.git
   Tyler:
-    :commit: da9f7b665069f2f6381e17dc8a2ab85eb89ac8f2
+    :commit: 62d36bc666f557f929d947d4863a459cec0a1b0d
     :git: https://github.com/IgorMuzyka/Tyler.git
   TylerSupportAppleCommon:
-    :commit: cdc390346517f03f70e58ca61a4a7f7e59d2e8f5
+    :commit: 61aa2c20ada6f7c8582c6f7b586c94cfc7327645
     :git: https://github.com/IgorMuzyka/Tyler.Support.Apple.Common.git
   TylerSupportAppleUIKit:
-    :commit: d8e672c2939f38ca5bde0687b3cda62bc8a9dca0
+    :commit: 5c746292301ab7ee6c20cd0a691e9037dea6777f
     :git: https://github.com/IgorMuzyka/Tyler.Support.Apple.UIKit.git
+  TypePreservingCodingAdapter:
+    :commit: 56de4b11ca4154837b18634628e6370bb53fd095
+    :git: https://github.com/IgorMuzyka/Type-Preserving-Coding-Adapter.git
   Variable:
     :commit: b5e2b1c7f7750c33c2c921396d1974bd72b8d46e
     :git: https://github.com/IgorMuzyka/Tyler.Variable.git
 
 SPEC CHECKSUMS:
-  Action: f05a50e1d55e5a6f80f64945c6f50a86a44f50cd
+  Action: 7d625b6270725a4e027f2376ef6f8fb93411149f
   Anchor: 81aa111c4471013082ccb0d0dd8a7026ced634d9
   Identifier: 8d68c86c2a11beab9415469c2c082907127241f6
   Kingfisher: 4f771421b9208185217550528a06fd48756cb7c2
-  Style: 3c28a0c0b70feca6be9145b25af2b4927a88c7c0
+  Style: e6d03600e05376db9da0f71afbef30586e4ad28a
   Substitutes: 2ff22bab9bf6a9d770b41e101fd55093f3e5ee2f
   SwiftShell: ef02230ca8eba9afeb072ecf625a1690e8a6025c
   Tag: 10c5e8e8043c04ea2f8fe867f68312b19125c91e
-  Tyler: fb89a17aff4b106afdffd0c8194a0f04e8074cb8
+  Tyler: eafcf5c9167973cad187ffdb5af425c1fc7a7c16
   TylerSupportAppleCommon: c66f4fbbf72cf326f4c6abf032d08122a47d3669
   TylerSupportAppleUIKit: 4839f674d5f56d99450d5846922739c7ed1f71ab
+  TypePreservingCodingAdapter: 9a4ae38ea6b42dff713093c4f6e80c39a1eed4d9
   Variable: 872712646955fca728a8c12fa534d1fb57a59833
 
-PODFILE CHECKSUM: 2d6acd78ed4068c6707a67eeb5a7d62b883241c7
+PODFILE CHECKSUM: dc01fe0c884af71702f9e1b5987def82903f72b9
 
 COCOAPODS: 1.6.0.beta.2

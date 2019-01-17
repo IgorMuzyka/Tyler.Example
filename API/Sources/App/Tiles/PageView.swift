@@ -22,13 +22,11 @@ final class PageView: Tile, Content {
         switch orientation {
         case .horizontal:
             anchor(container.anchor.width.equal.to(self).multiplier(pages.count))
-            anchor(container.anchor.height)
-            anchor(container.anchor.centerY)
+            anchor(container.anchor.height.centerY)
             style(.showsHorizontalScrollIndicator(.let(false)))
         case .vertical:
             anchor(container.anchor.height.equal.to(self).multiplier(pages.count))
-            anchor(container.anchor.width)
-            anchor(container.anchor.centerX)
+            anchor(container.anchor.width.centerX)
             style(.showsVerticalScrollIndicator(.let(false)))
         }
 
