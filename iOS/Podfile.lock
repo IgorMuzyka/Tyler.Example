@@ -4,6 +4,7 @@ PODS:
   - Anchor (0.0.1):
     - Identifier
     - Tag
+    - Variable
   - Identifier (0.0.1)
   - Kingfisher (5.0.1)
   - Style (0.0.1):
@@ -84,16 +85,16 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Action:
-    :commit: 212c77d09d8175310764c289af50953a5a612df2
+    :commit: 9a351004f0ee9eefe3bc2b9fbb7dc9229f262f3c
     :git: https://github.com/IgorMuzyka/Tyler.Action.git
   Anchor:
-    :commit: eeb9d09bc25963a96a770a8812c094da9594d471
+    :commit: f937cafeb2978081b81d3115c219193e387710b1
     :git: https://github.com/IgorMuzyka/Tyler.Anchor.git
   Identifier:
     :commit: 7cae3ec51fa514749a98c98d578f991169e5d1e5
     :git: https://github.com/IgorMuzyka/Tyler.Identifier.git
   Style:
-    :commit: 938a47e7dc695fcf8c9e58288031cd7a21811139
+    :commit: 87e1e163935220859de9f06843a10c6beeb18490
     :git: https://github.com/IgorMuzyka/Tyler.Style.git
   Substitutes:
     :commit: 4d659e857044639b6212865b3b7bdd51e4bb1fe8
@@ -102,13 +103,13 @@ CHECKOUT OPTIONS:
     :commit: 235120d0dd85d0b2db95ba04f6637fc6f87b19b6
     :git: https://github.com/IgorMuzyka/Tyler.Tag.git
   Tyler:
-    :commit: 62d36bc666f557f929d947d4863a459cec0a1b0d
+    :commit: 1d45495b6a0da0218288273737940c654c7beb9e
     :git: https://github.com/IgorMuzyka/Tyler.git
   TylerSupportAppleCommon:
     :commit: 61aa2c20ada6f7c8582c6f7b586c94cfc7327645
     :git: https://github.com/IgorMuzyka/Tyler.Support.Apple.Common.git
   TylerSupportAppleUIKit:
-    :commit: 5c746292301ab7ee6c20cd0a691e9037dea6777f
+    :commit: 3b4294b90fbc6236f69695a9e8d3306a6847ea25
     :git: https://github.com/IgorMuzyka/Tyler.Support.Apple.UIKit.git
   TypePreservingCodingAdapter:
     :commit: 56de4b11ca4154837b18634628e6370bb53fd095
@@ -119,7 +120,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Action: 7d625b6270725a4e027f2376ef6f8fb93411149f
-  Anchor: 81aa111c4471013082ccb0d0dd8a7026ced634d9
+  Anchor: aab4cd602dcde4a31a3bfa51b4c52322dcf960c2
   Identifier: 8d68c86c2a11beab9415469c2c082907127241f6
   Kingfisher: 4f771421b9208185217550528a06fd48756cb7c2
   Style: e6d03600e05376db9da0f71afbef30586e4ad28a

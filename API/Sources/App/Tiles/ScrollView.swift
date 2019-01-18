@@ -31,5 +31,6 @@ final class ScrollView: Tile, Content {
 
     required init(from decoder: Decoder) throws {
         try super.init(from: decoder)
+        contentView = tiles.first
     }
 }

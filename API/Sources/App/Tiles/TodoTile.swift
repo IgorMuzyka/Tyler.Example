@@ -5,6 +5,7 @@ import TylerSupportAppleCommon
 import Variable
 import Anchor
 import Substitutes
+import SwiftDate
 
 public final class TodoTile: Tile {
 
@@ -23,7 +24,7 @@ public final class TodoTile: Tile {
         }
 
         let title = Label(attributedText: .let(text))
-        let date = Label(text: .let("10/04/1992"), color: .let(.gray))
+        let date = Label(text: .let(todo.createdAt!.toFormat("dd MMM yyy 'at' HH:mm")), color: .let(.gray))
 
         box
             .anchor(box.anchor.size.equal.to(20))

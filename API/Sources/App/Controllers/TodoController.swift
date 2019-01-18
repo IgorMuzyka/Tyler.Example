@@ -1,6 +1,9 @@
 
 import Vapor
 import TylerSupportAppleUIKit
+import Tyler
+import Substitutes
+import Variable
 import Anchor
 
 final class TodoController {
@@ -9,19 +12,24 @@ final class TodoController {
 //        return Todo.query(on: req).all()
 //    }
 
-    static func index(_ req: Request) throws -> Future<ScrollView> {
+    static func index(_ req: Request) throws -> Future<Screen> {
         return Todo.query(on: req).all().flatMap { todos in
 
             let items = todos.map(TodoTile.init)
-
             let scrollView = ScrollView(items: items, orientation: .vertical)
-                .anchor(Anchor(.self).left.bottom.right)
-                .anchor(Anchor(.self).topMargin.constant(50))
-                .style(UIViewStyle.backgroundColor(.let(.white)))
+                .anchor(Anchor(.self).left.top.right.bottom)
 
             EqualSizeFixedSpacingLayout.layout(tiles: items, in: scrollView.contentView, with: 4, orientation: .vertical)
 
-            return Future.map(on: req) { scrollView }
+            return Future.map(on: req) { Screen(tile: scrollView) }
+
+
+//            let tile = Tile(UIKitViewType.view)
+//
+//            tile.anchor(tile.anchor.left.top.bottom.right)
+//            tile.style(UIViewStyle.backgroundColor(.let(.green)))
+//
+//            return Future.map(on: req) { Screen(tile: tile) }
         }
     }
 

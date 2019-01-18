@@ -21,12 +21,14 @@ let package = Package(
         .package(url: "https://github.com/IgorMuzyka/Tyler.Substitutes.git", .branch("master")),
         .package(url: "https://github.com/IgorMuzyka/Tyler.Support.Apple.Common.git", .branch("master")),
         .package(url: "https://github.com/IgorMuzyka/Tyler.Support.Apple.UIKit.git", .branch("master")),
+        .package(url: "https://github.com/malcommac/SwiftDate", from: "5.0.0"),
     ],
     targets: [
         .target(name: "App", dependencies: [
             "FluentSQLite", "Vapor",
             "Tyler", "Tyler.Identifier", "Tyler.Tag", "Tyler.Variable", "Tyler.Style", "Tyler.Anchor", "Tyler.Action",
-            "Tyler.Substitutes", "Tyler.Support.Apple.Common", "Tyler.Support.Apple.UIKit"
+            "Tyler.Substitutes", "Tyler.Support.Apple.Common", "Tyler.Support.Apple.UIKit",
+            "SwiftDate"
         ]),
         .target(name: "Run", dependencies: ["App"]),
         .testTarget(name: "AppTests", dependencies: ["App"])

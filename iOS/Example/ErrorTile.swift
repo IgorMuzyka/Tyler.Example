@@ -10,10 +10,18 @@ final public class ErrorTile: Tile {
     public private(set) var label: Tile!
 
     public init(error: Error) {
+//        let text = error.localizedDescription
+
+        let text = "\(error)"
+
         label = Tile(UIKitViewType.label)
-            .anchor(Anchor(.self).center)
+            .anchor(Anchor(.self).center.left.right)
             .style(UILabelStyle.textColor(.let(.white)))
-            .style(UILabelStyle.text(.let(error.localizedDescription)))
+            .style(UILabelStyle.text(.let(text)))
+            .style(UILabelStyle.numberOfLines(.let(0)))
+            .style(UILabelStyle.lineBreakMode(.let(.byWordWrapping)))
+            .style(UILabelStyle.minimumScaleFactor(.let(0.001)))
+            .style(UILabelStyle.adjustsFontSizeToFitWidth(.let(true)))
 
         super.init(UIKitViewType.view.rawValue, name: nil, tiles: [label])
 

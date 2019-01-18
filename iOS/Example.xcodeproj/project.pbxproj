@@ -16,6 +16,7 @@
 		55AF104B21DF962E004B3F71 /* RemoteTileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AF104A21DF962E004B3F71 /* RemoteTileViewController.swift */; };
 		55AF17B421EFB1C3004B3F71 /* ErrorTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AF17B321EFB1C3004B3F71 /* ErrorTile.swift */; };
 		55AF220D21F0D885004B3F71 /* NavigationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AF220C21F0D885004B3F71 /* NavigationAction.swift */; };
+		55AF24D321F1CEEC004B3F71 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AF24D221F1CEEC004B3F71 /* Server.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		55AF104A21DF962E004B3F71 /* RemoteTileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteTileViewController.swift; sourceTree = "<group>"; };
 		55AF17B321EFB1C3004B3F71 /* ErrorTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTile.swift; sourceTree = "<group>"; };
 		55AF220C21F0D885004B3F71 /* NavigationAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAction.swift; sourceTree = "<group>"; };
+		55AF24D221F1CEEC004B3F71 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		69CE9E5B025DB4A02865C93B /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C379049BB3E53FC3AAB96CBA /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C2A08C96BF0E1C11C4745C /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				5559F89721B019E0002E7EE0 /* ExampleTile.swift */,
 				55AF17B321EFB1C3004B3F71 /* ErrorTile.swift */,
 				55AF220C21F0D885004B3F71 /* NavigationAction.swift */,
+				55AF24D221F1CEEC004B3F71 /* Server.swift */,
 				5559F88A21B001BD002E7EE0 /* Assets.xcassets */,
 				5559F88C21B001BD002E7EE0 /* LaunchScreen.storyboard */,
 				5559F88F21B001BD002E7EE0 /* Info.plist */,
@@ -251,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55AF24D321F1CEEC004B3F71 /* Server.swift in Sources */,
 				55AF104B21DF962E004B3F71 /* RemoteTileViewController.swift in Sources */,
 				5559F89821B019E0002E7EE0 /* ExampleTile.swift in Sources */,
 				5559F89621B0054D002E7EE0 /* TileViewController.swift in Sources */,

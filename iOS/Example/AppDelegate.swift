@@ -10,7 +10,7 @@ import UIKit
 import Tyler
 import TylerSupportAppleUIKit
 import Action
-//import Variable
+import Variable
 //import Substitutes
 
 @UIApplicationMain
@@ -35,22 +35,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print(action.destination)
         }
 
+        tyler.stores.variableResolvers.register(name: "statusBar.height") { () -> Variable<Double> in
+            return .let(Double(UIApplication.shared.statusBarFrame.height))
+        }
+
         window!.rootViewController = RemoteTileViewController(remoteTile: RemoteTile(url: Server.route(to: "todos")), tyler: tyler)
         window!.makeKeyAndVisible()
 
         return true
-    }
-}
-
-enum Server {
-
-    static var port = "8080"
-    static var ipAddress: String = {
-        return Bundle.main.infoDictionary?["REMOTE_IP_ADDRESS"] as! String
-    }()
-
-    static func route(to path: String) -> URL {
-        let route = "http://\(ipAddress):\(port)/\(path)"
-        return URL(string: route)!
     }
 }

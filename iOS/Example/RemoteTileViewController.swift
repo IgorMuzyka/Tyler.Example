@@ -82,13 +82,15 @@ public final class RemoteTile {
 
     @discardableResult
     fileprivate func load() -> URLSessionTask {
+        print("loading Tile from url: \(url.absoluteString)")
         let request = URLRequest(url: url)
         let task = URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
             do {
+                if let error = error {
+                    throw error
+                }
+
                 guard let data = data else {
-                    if let error = error {
-                        throw error
-                    }
                     return
                 }
 
