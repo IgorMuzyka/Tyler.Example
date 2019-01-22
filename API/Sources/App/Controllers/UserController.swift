@@ -3,6 +3,9 @@
 import Vapor
 import TylerSupportAppleUIKit
 import Anchor
+import SharedTiles
+
+extension ScrollView: Content {}
 
 final class UserController {
 

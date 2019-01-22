@@ -150,8 +150,8 @@
         "repositoryURL": "https://github.com/malcommac/SwiftDate",
         "state": {
           "branch": null,
-          "revision": "9608361b6a7ee726b12a9d40a29a4614faec12fb",
-          "version": "5.0.13"
+          "revision": "ed308a5afb97a3874300b761dad6e9966269e3e7",
+          "version": "5.1.0"
         }
       },
       {
@@ -187,6 +187,15 @@
         "state": {
           "branch": "master",
           "revision": "f937cafeb2978081b81d3115c219193e387710b1",
+          "version": null
+        }
+      },
+      {
+        "package": "Shared.Tiles",
+        "repositoryURL": "https://github.com/IgorMuzyka/Tyler.Example.Shared.Tiles",
+        "state": {
+          "branch": "master",
+          "revision": "cd3a6441c3a1443398aa63a581c60a4fc8650294",
           "version": null
         }
       },

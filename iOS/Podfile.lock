@@ -7,6 +7,16 @@ PODS:
     - Variable
   - Identifier (0.0.1)
   - Kingfisher (5.0.1)
+  - SharedTiles (0.0.1):
+    - Action
+    - Anchor
+    - Identifier
+    - Substitutes
+    - Tag
+    - Tyler
+    - TylerSupportAppleCommon
+    - TylerSupportAppleUIKit
+    - Variable
   - Style (0.0.1):
     - Tag
     - TypePreservingCodingAdapter
@@ -44,6 +54,7 @@ DEPENDENCIES:
   - Anchor (from `https://github.com/IgorMuzyka/Tyler.Anchor.git`)
   - Identifier (from `https://github.com/IgorMuzyka/Tyler.Identifier.git`)
   - Kingfisher (~> 5.0.0)
+  - SharedTiles (from `https://github.com/IgorMuzyka/Tyler.Example.Shared.Tiles.git`)
   - Style (from `https://github.com/IgorMuzyka/Tyler.Style.git`)
   - Substitutes (from `https://github.com/IgorMuzyka/Tyler.Substitutes.git`)
   - SwiftShell (>= 4.0.0)
@@ -66,6 +77,8 @@ EXTERNAL SOURCES:
     :git: https://github.com/IgorMuzyka/Tyler.Anchor.git
   Identifier:
     :git: https://github.com/IgorMuzyka/Tyler.Identifier.git
+  SharedTiles:
+    :git: https://github.com/IgorMuzyka/Tyler.Example.Shared.Tiles.git
   Style:
     :git: https://github.com/IgorMuzyka/Tyler.Style.git
   Substitutes:
@@ -93,6 +106,9 @@ CHECKOUT OPTIONS:
   Identifier:
     :commit: 7cae3ec51fa514749a98c98d578f991169e5d1e5
     :git: https://github.com/IgorMuzyka/Tyler.Identifier.git
+  SharedTiles:
+    :commit: 3051ff4e26d321676d157ca975c420fb1aecffd2
+    :git: https://github.com/IgorMuzyka/Tyler.Example.Shared.Tiles.git
   Style:
     :commit: 87e1e163935220859de9f06843a10c6beeb18490
     :git: https://github.com/IgorMuzyka/Tyler.Style.git
@@ -123,6 +139,7 @@ SPEC CHECKSUMS:
   Anchor: aab4cd602dcde4a31a3bfa51b4c52322dcf960c2
   Identifier: 8d68c86c2a11beab9415469c2c082907127241f6
   Kingfisher: 4f771421b9208185217550528a06fd48756cb7c2
+  SharedTiles: 5f79af539c7a5d2700db7826700a75add287525a
   Style: e6d03600e05376db9da0f71afbef30586e4ad28a
   Substitutes: 2ff22bab9bf6a9d770b41e101fd55093f3e5ee2f
   SwiftShell: ef02230ca8eba9afeb072ecf625a1690e8a6025c
@@ -133,6 +150,6 @@ SPEC CHECKSUMS:
   TypePreservingCodingAdapter: 9a4ae38ea6b42dff713093c4f6e80c39a1eed4d9
   Variable: 872712646955fca728a8c12fa534d1fb57a59833
 
-PODFILE CHECKSUM: dc01fe0c884af71702f9e1b5987def82903f72b9
+PODFILE CHECKSUM: 6c5fc20c6dc5aa19f7f28e716e66edae7af93e60
 
 COCOAPODS: 1.6.0.beta.2

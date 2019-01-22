@@ -5,6 +5,9 @@ import Tyler
 import Substitutes
 import Variable
 import Anchor
+import SharedTiles
+
+extension Screen: Content {}
 
 final class TodoController {
 

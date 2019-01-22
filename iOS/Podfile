@@ -20,5 +20,7 @@ target 'Example' do
   pod "TylerSupportAppleUIKit", :git => "https://github.com/IgorMuzyka/Tyler.Support.Apple.UIKit.git"
   pod "TypePreservingCodingAdapter", :git => "https://github.com/IgorMuzyka/Type-Preserving-Coding-Adapter.git"
 
+	pod "SharedTiles", :git => "https://github.com/IgorMuzyka/Tyler.Example.Shared.Tiles.git"
+
 end
 

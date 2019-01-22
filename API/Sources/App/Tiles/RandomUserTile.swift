@@ -4,10 +4,12 @@ import TylerSupportAppleUIKit
 import TylerSupportAppleCommon
 import Variable
 import Anchor
+import SharedTiles
 
 final public class RandomUserTile: Tile {
 
     init(name: String? = nil, user: RandomUser) {
+		
         let imageView = ImageView(url: user.photo)
         let username = Label(text: .let(user.name + " " + user.surname), color: .let(.random))
 

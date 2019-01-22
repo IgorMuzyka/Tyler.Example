@@ -3,6 +3,7 @@ import Tyler
 import TylerSupportAppleUIKit
 import Variable
 import Anchor
+import SharedTiles
 
 final public class CreditCardTile: Tile {
 

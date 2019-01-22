@@ -7,7 +7,7 @@ import Tag
 public class TileViewController: UIViewController {
 
     public private(set) var context: Context!
-    public private(set) var tile: Tile
+    public private(set) var tile: Tile!
     public private(set) var pool: VariablePool
     public var tags: [Tag] = [.currentOrientation, .wildcard] {
         didSet {
